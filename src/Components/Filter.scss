@@ -1,0 +1,25 @@
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 50px;
+
+  input, select {
+    background-color: var(--article-color);
+    padding: 12px;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color);
+
+    &::placeholder {
+      color: var(--text-color);
+    }
+  }
+
+  input.light-theme, select.light-theme {
+    background-color: var(--light-mode-input);
+  }
+}
